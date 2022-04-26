@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack"
+    "build": "rm -rf ./dist && webpack"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",
