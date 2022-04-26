@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 import Icon from './icon';
 
 ReactDOM.render(
-  <Icon name="wechat"/>,
+  <Icon name="alipay"/>,
   document.getElementById('root')
 );

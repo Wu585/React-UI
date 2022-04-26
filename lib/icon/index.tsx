@@ -1,4 +1,5 @@
 import React, {FC} from 'react';
+import './importAllIcons';
 
 interface Props {
   name: string;
@@ -6,7 +7,11 @@ interface Props {
 
 const Icon: FC<Props> = ({name}) => {
   return (
-    <span>icon-{name}</span>
+    <span>
+      <svg>
+        <use xlinkHref={`#${name}`}/>
+      </svg>
+    </span>
   );
 };
 
