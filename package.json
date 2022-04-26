@@ -5,8 +5,8 @@
   "author": "Wu <15151851516@163.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "rm -rf ./dist && webpack"
+    "start": "webpack-dev-server --config ./webpack.config.dev.js",
+    "build": "rm -rf ./dist && webpack --config ./webpack.config.prod.js"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",

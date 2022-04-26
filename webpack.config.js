@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: "development",
+  // mode: "development",
   entry: {
     index: './lib/index.tsx'
   },
@@ -14,12 +14,12 @@ module.exports = {
     library: 'W-UI',
     libraryTarget: "umd"
   },
-  plugins: [
+ /* plugins: [
     new HtmlWebpackPlugin({
       title: "W-UI",
       template: "index.html"
     })
-  ],
+  ],*/
   module: {
     rules: [
       {
@@ -28,7 +28,7 @@ module.exports = {
       }
     ]
   },
-  externals: {
+  /*externals: {
     react: {
       commonjs: 'react',
       commonjs2: 'react',
@@ -41,5 +41,5 @@ module.exports = {
       amd: 'react-dom',
       root: 'ReactDOM',
     },
-  }
+  }*/
 };
