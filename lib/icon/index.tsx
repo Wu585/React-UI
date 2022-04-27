@@ -1,6 +1,7 @@
 import React, {FC, SVGAttributes} from 'react';
 import './importAllIcons';
 import './icon.scss';
+import classnames from '../helpers/classnames';
 
 interface Props extends SVGAttributes<SVGSVGElement> {
   name: string;
@@ -8,7 +9,7 @@ interface Props extends SVGAttributes<SVGSVGElement> {
 
 const Icon: FC<Props> = ({name, className, ...restProps}) => {
   return (
-    <svg className={`wui-icon ${className}`}
+    <svg className={classnames('wui-icon', className)}
          {...restProps}
     >
       <use xlinkHref={`#${name}`}/>
