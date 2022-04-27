@@ -21,6 +21,20 @@ module.exports = {
       {
         test: /\.svg$/,
         loader: "svg-sprite-loader"
+      },
+      {
+        test: /\.s([ac])ss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+          /*{
+            loader: "sass-loader",
+            options: {
+              includePaths: [path.resolve(__dirname, 'stylesheets', 'include')]
+            }
+          }*/
+        ]
       }
     ]
   },

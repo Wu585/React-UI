@@ -1,5 +1,6 @@
 import React, {FC} from 'react';
 import './importAllIcons';
+import './icon.scss';
 
 interface Props {
   name: string;
@@ -7,11 +8,9 @@ interface Props {
 
 const Icon: FC<Props> = ({name}) => {
   return (
-    <span>
-      <svg>
-        <use xlinkHref={`#${name}`}/>
-      </svg>
-    </span>
+    <svg className="wui-icon">
+      <use xlinkHref={`#${name}`}/>
+    </svg>
   );
 };
 
